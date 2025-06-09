@@ -1,0 +1,68 @@
+/* Insights.css */
+.insights-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.insights-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.insights-loading {
+  text-align: center;
+  color: #888;
+}
+
+.insights-list {
+  list-style: none;
+  padding: 0;
+}
+
+.insights-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #f7f7f7;
+  transition: background 0.2s;
+}
+
+.insights-item:hover {
+  background: #eef1f5;
+}
+
+.insights-date {
+  font-weight: bold;
+  color: #555;
+}
+
+.insights-mood {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Color-coded moods */
+.mood-happy {
+  color: #28a745;
+}
+.mood-sad {
+  color: #007bff;
+}
+.mood-angry {
+  color: #dc3545;
+}
+.mood-fearful {
+  color: #ffc107;
+}
+.mood-neutral {
+  color: #6c757d;
+}

@@ -1,0 +1,29 @@
+/* Adjust Voice Pitch container */
+.voice-pitch-container {
+  flex: 1;
+  margin-top: 0; /* remove extra margin */
+  padding: 20px 24px;
+  border: 2px solid #ffe6b3;
+  border-radius: 30px;
+  background-color: #fff9eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-in-out;
+  color: #d17b00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.voice-pitch-container h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.voice-pitch-container p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: inherit;
+}

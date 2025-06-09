@@ -1,0 +1,120 @@
+/* Therapy Session Page */
+.therapy-session {
+  position: relative;
+  min-height: 100vh;
+  padding: 60px 40px 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f9f7f1;
+  background-color: #12151a; /* Dark, clean background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+/* Remove background overlay since no image */
+.therapy-session::before {
+  content: none;
+}
+
+/* Page title */
+.therapy-session h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 1.1px;
+  color: #f9f7f1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Main layout container */
+.therapy-layout {
+  display: flex;
+  gap: 48px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* Left side - detectors and fusion */
+.therapy-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  min-width: 380px;
+  max-width: 750px;
+  align-items: center;
+}
+
+/* Right side - chatbot */
+.therapy-right {
+  flex: 1;
+  min-width: 360px;
+  max-width: 420px;
+  position: relative;
+}
+
+/* Card styling for all boxes */
+.therapy-left .card,
+.therapy-right .card,
+.chatbot-container {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 32px 36px;
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.3),
+    inset 0 0 70px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+  backdrop-filter: blur(15px);
+  color: #f9f7f1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.therapy-left .card:hover,
+.therapy-right .card:hover,
+.chatbot-container:hover {
+  box-shadow: 0 14px 48px rgba(255, 204, 128, 0.75),
+    inset 0 0 100px rgba(255, 204, 128, 0.3);
+  transform: translateY(-6px);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .therapy-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .therapy-left,
+  .therapy-right {
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .therapy-right {
+    margin-top: 40px;
+  }
+
+  .facial-expression-container,
+  .voice-pitch-container,
+  .emotion-fusion {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.fusion-voice-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch; /* align height */
+  margin-top: 16px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+}
